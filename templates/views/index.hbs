@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <h1>Weather</h1>
+        <form onsubmit="event.preventDefault();" role="search">
+            <label for="search">Search for stuff</label>
+            <input id="search" type="search" placeholder="Your Location" autofocus required />
+            <button type="submit">Go</button>
+        </form>
+        <div class="locationContainer">
+            
+            <h3 id="locationInfo"></h3>
+            
+        </div>
+       <div class="weatherInfo">
+           
+           <img alt="">
+            <p id="weather"></p>
+            
+       </div>
+       
+        <p id="error"></p>
+    </div>
+
+
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
